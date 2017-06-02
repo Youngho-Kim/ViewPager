@@ -1,6 +1,8 @@
 # ViewPager
 
+
 #### View Pager 만들기
+[전체코드보기](https://github.com/Youngho-Kim/ViewPager/blob/master/app/src/main/java/com/android/kwave/viewpager/MainActivity.java)
 ```java
        // 1. ViewPager 위젯 연결
         pager = (ViewPager) findViewById(R.id.pager);  
