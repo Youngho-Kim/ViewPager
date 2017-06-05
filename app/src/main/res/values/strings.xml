@@ -3,4 +3,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="front">&lt;</string>
+    // lt : less than
+    <string name="back">&gt;</string>
+    <string name="title_activity_maps">Map</string>
+    // gt : greater than
 </resources>
