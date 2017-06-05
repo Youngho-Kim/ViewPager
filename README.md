@@ -33,3 +33,22 @@
         tab.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(pager));
 ```
 
+#### Google Map 적용하기
+[전체코드보기]()
+```java
+ https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=D2:BB:86:6C:E3:1B:63:0D:76:EF:A9:4C:12:9B:F0:C0:B9:98:69:9A%3Bcom.android.kwave.viewpager
+위 코드를 인터넷에 치면 구글맵 API를 생성하는 키를 만들 수 있다.
+먼저 구글맵 API 키를 준비한다.
+        
+        // 프래그먼트에서 map(아이디) 호출하기
+        // SupportMapFragment : 버튼 같은 타입형태
+        SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
+
+        // 맵이 사용할 준비가 되면 onMapReady 함수가 자동으로 호출된다.
+        mapFragment.getMapAsync(this);
+        
+                // 좌표만 생성
+                LatLng sinsa = new LatLng(37.516066,127.019361);
+                // 맵의 중심을 해당 좌표로 이동시킨다.            // 좌표  줌레벨
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sinsa, 17));
+```
